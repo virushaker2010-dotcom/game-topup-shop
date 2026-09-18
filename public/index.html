@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game TopUp</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div class="brand">🎮 Game TopUp</div><a href="/admin.html">لوحة التحكم</a></header>
+<main><section class="hero"><h1>شحن PUBG MOBILE و Free Fire</h1><p>اختر اللعبة والباقـة، أدخل Player ID، ثم أنشئ طلبك.</p></section>
+<section class="card"><div class="tabs"><button class="active" data-game="PUBG MOBILE">PUBG MOBILE</button><button data-game="Free Fire">Free Fire</button></div>
+<div id="products" class="products"></div>
+<form id="orderForm"><input type="hidden" id="game"><input type="hidden" id="productId">
+<label>Player ID</label><input id="playerId" required maxlength="100" placeholder="اكتب Player ID">
+<label>الاسم (اختياري)</label><input id="name">
+<label>رقم الهاتف (اختياري)</label><input id="phone" inputmode="tel">
+<label>طريقة الدفع</label><select id="payment"><option value="manual">تحويل/دفع يدوي</option><option value="gateway">بوابة دفع (بعد الربط)</option></select>
+<button class="primary">إنشاء الطلب</button></form><div id="result"></div></section></main>
+<script src="/app.js"></script></body></html>
